@@ -1,0 +1,29 @@
+.gameCard {
+  background-image: var(--bgImage);
+  background-position: center;
+  background-size: cover;
+  transition: all .5s ease-in;
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    @apply bg-background;
+    opacity: .6;
+    transition: all .3s ease-in;
+  }
+
+  &:hover {
+    &::before{
+      opacity: 0.3;
+    }
+  }
+}
