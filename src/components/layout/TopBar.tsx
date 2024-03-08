@@ -1,6 +1,8 @@
 import ThemeToggle from "@/components/feedback/ThemeToggle";
 import React from "react";
 import FovIcon from "@/assets/icon.svg?react";
+import { Github } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const TopBar: React.FC = () => {
   return (
@@ -10,7 +12,15 @@ const TopBar: React.FC = () => {
         <h1 className="text-xl font-bold">Sim Racing FOV Calculator</h1>
       </div>
 
-      <div>
+      <div className="flex items-center gap-3">
+        <Button variant={"outline"} size={"icon"} asChild>
+          <a
+            href="https://github.com/kotsiossp97/simracing-fov-calculator/"
+            target="_blank"
+          >
+            <Github size={"1.3rem"} />
+          </a>
+        </Button>
         <ThemeToggle />
       </div>
     </div>

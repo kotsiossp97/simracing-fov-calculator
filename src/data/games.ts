@@ -65,7 +65,17 @@ export const GAME_DATA = [
     calculation: "hfov",
     image: "ets.png",
   },
-
+  {
+    name: "F1 2021+",
+    min: -20,
+    max: +20,
+    decimals: 0,
+    factor: 1,
+    base: 77,
+    increment: 2,
+    step: 1,
+    calculation: "hfov_base_step",
+  },
   {
     name: "GTR2",
     min: 0.5,
@@ -76,27 +86,16 @@ export const GAME_DATA = [
     baseTriple: 58,
     calculation: "vfovx",
   },
-  {
-    name: "Race07",
-    min: 0.4,
-    max: 1.5,
-    decimals: 1,
-    factor: 1,
-    baseSingle: 58,
-    baseTriple: 58,
-    calculation: "vfovx",
-  },
-  {
-    name: "F1 2021+",
-    min: -20,
-    max: +20,
-    decimals: 0,
-    factor: 1,
-    base: 77,
-    increment: 2,
-    step: 1,
-    calculation: "hfov_base_step"
-  },
+  // {
+  //   name: "Race07",
+  //   min: 0.4,
+  //   max: 1.5,
+  //   decimals: 1,
+  //   factor: 1,
+  //   baseSingle: 58,
+  //   baseTriple: 58,
+  //   calculation: "vfovx",
+  // },
 ];
 
 export type TGame = (typeof GAME_DATA)[0];
