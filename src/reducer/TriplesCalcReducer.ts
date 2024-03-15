@@ -12,9 +12,9 @@ export interface IAngleCalcState {
 }
 export const initialAngleState: IAngleCalcState = {
   inputs: {
-    centerWidth: 75,
-    leftWidth: 75,
-    ypotinousa: 135,
+    centerWidth: "75",
+    leftWidth: "75",
+    ypotinousa: "135",
   },
   results: undefined,
 };
