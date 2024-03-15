@@ -1,0 +1,127 @@
+.triplesPage {
+  // &, * {
+  //   box-sizing: border-box;
+  // }
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .pageTitle {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    @apply text-2xl;
+    @apply drop-shadow-lg;
+  }
+
+  .pageMain {
+    display: flex;
+    flex: 1;
+    @apply gap-5;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+
+  .pageCard {
+    flex: 1;
+    flex-basis: 24rem;
+    .resultCard{
+      width: 100%;
+      aspect-ratio: 16/9;
+      background-image: var(--bgImage);
+      background-position: center;
+      background-size: cover;
+      transition: all .5s ease-in;
+      position: relative;
+      z-index: 0;
+
+      &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        @apply bg-background;
+        opacity: .6;
+        transition: all .3s ease-in;
+      }
+      &:hover {
+        &::before{
+          opacity: 0.2;
+        }
+      }
+    }
+  }
+
+  .triplesInputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .centerMonitor,
+    .leftMonitor,
+    .ypotinousa {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 10rem;
+      &::before {
+        display: block;
+        content: "";
+        text-align: center;
+        width: 100%;
+        padding: 0.2rem;
+        margin-bottom: 0.8rem;
+        @apply bg-accent;
+        @apply rounded-md;
+      }
+    }
+
+    .centerMonitor {
+      left: 50%;
+      transform: translate(-50%);
+      &::before {
+        content: "Center Monitor Width (cm)";
+      }
+    }
+
+    .leftMonitor {
+      left: calc(50% - 10rem);
+      transform-origin: right;
+      transform: translateX(-50%) rotate(-50deg);
+
+      &::before {
+        content: "Left Monitor Width (cm)";
+      }
+      & .monInput {
+        transform: rotate(50deg) translate(1rem);
+      }
+    }
+    .ypotinousa {
+      top: 10rem;
+      left: 50%;
+      transform: translate(-60%) rotate(-25deg);
+      // transform-origin: left;
+      width: 18.126rem;
+
+      &::before {
+        content: "Left edge to right edge (cm)";
+      }
+      & .monInput {
+        transform: rotate(25deg) translate(1rem);
+      }
+    }
+  }
+
+  .monInput {
+    display: flex;
+    justify-content: center;
+    input {
+      max-width: 4rem;
+    }
+  }
+}

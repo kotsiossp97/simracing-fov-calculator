@@ -9,11 +9,9 @@ import { TGame } from "@/data/games";
 import React, { CSSProperties } from "react";
 import styles from "./GameCard.module.scss";
 import { FOVCalculator } from "@/lib/fovCalculator";
+import { getImgUrl } from "@/lib/utils";
 interface IGameCardProps {
   game: TGame;
-}
-function getImgUrl(name: string) {
-  return new URL(`../../../assets/games/${name}`, import.meta.url).href;
 }
 
 const GameCard: React.FC<IGameCardProps> = ({ game }) => {
