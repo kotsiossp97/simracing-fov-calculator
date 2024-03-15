@@ -17,9 +17,9 @@ export interface ICalcResults {
 }
 
 export interface IAngleCalcInputs {
-  centerWidth: number;
-  leftWidth: number;
-  ypotinousa: number;
+  centerWidth: string;
+  leftWidth: string;
+  ypotinousa: string;
 }
 
 export interface IAngleCalcResults {

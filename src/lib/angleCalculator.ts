@@ -9,14 +9,18 @@ export const AngleCalculator = {
      * b: left,
      * c: ypoteinousa
      */
+    const a = parseFloat(centerWidth)
+    const b = parseFloat(leftWidth)
+    const c = parseFloat(ypotinousa)
+    
     const cosC =
-      (Math.pow(centerWidth, 2) +
-        Math.pow(leftWidth, 2) -
-        Math.pow(ypotinousa, 2)) /
-      (2 * centerWidth * leftWidth);
+      (Math.pow(a, 2) +
+        Math.pow(b, 2) -
+        Math.pow(c, 2)) /
+      (2 * a * b);
 
-    const c = Math.acos(cosC);
+    const angleRad = Math.acos(cosC);
     const arcConst = 180 / Math.PI;
-    return (c * arcConst)
+    return (angleRad * arcConst)
   },
 };

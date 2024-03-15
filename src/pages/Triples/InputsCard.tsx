@@ -26,7 +26,7 @@ const InputsCard: React.FC<IInputsCardProps> = (props) => {
   } = props;
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const value = parseFloat(e.target.value);
+    const value = e.target.value;
     const id = e.target.id;
     // if (!value) return;
 
