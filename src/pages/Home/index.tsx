@@ -29,7 +29,7 @@ const HomePage: React.FC = () => {
       results={calculatorState.results}
       setCalcState={dispatchCalculator}
     >
-      <div className="flex-1 flex gap-5 flex-wrap px-20 p-5">
+      <div className="h-full flex gap-5 flex-wrap">
         <Card className="flex-1 basis-96">
           <CardHeader>
             <CardTitle>Inputs</CardTitle>

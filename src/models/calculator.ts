@@ -15,3 +15,13 @@ export interface ICalcResults {
   y: number;
   width: number;
 }
+
+export interface IAngleCalcInputs {
+  centerWidth: number;
+  leftWidth: number;
+  ypotinousa: number;
+}
+
+export interface IAngleCalcResults {
+  angle: number;
+}
