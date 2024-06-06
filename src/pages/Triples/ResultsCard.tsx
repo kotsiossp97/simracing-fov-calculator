@@ -30,7 +30,7 @@ const ResultsCard: React.FC<IResultsCardProps> = ({ result }) => {
           }
           className={styles.resultCard}
         >
-          <CardHeader className="flex flex-col justify-between h-full p-3 ">
+          <CardHeader className="flex flex-col justify-between h-full p-3">
             <CardTitle className="text-xl font-bold drop-shadow-md leading-none">
               Triple Screen Angle
             </CardTitle>

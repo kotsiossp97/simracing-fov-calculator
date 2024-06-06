@@ -37,10 +37,10 @@ const GameCard: React.FC<IGameCardProps> = ({ game }) => {
             "--bgImage": `url(${getImgUrl(game.image ?? "icon.png")})`,
           } as CSSProperties
         }
-        className={styles.gameCard}
+        className={`${styles.gameCard} min-h-24`}
       >
         <CardHeader className="flex flex-col justify-between h-full p-3 m-0 space-y-0">
-          <CardTitle className="text-[.7rem] md:text-sm lg:text-[1rem] font-bold leading-none">
+          <CardTitle className="text-[.7rem] md:text-sm lg:text-[1rem] font-bold leading-none box line-clamp-2">
             {game.name}
           </CardTitle>
           <CardDescription className="text-right text-foreground font-extrabold text-2xl">

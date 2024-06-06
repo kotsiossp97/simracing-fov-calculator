@@ -43,21 +43,33 @@ const InputsCard: React.FC<IInputsCardProps> = (props) => {
         <CardTitle>Inputs</CardTitle>
         <CardDescription>Enter your inputs</CardDescription>
       </CardHeader>
-      <CardContent >
+      <CardContent className="ml-[10%] max-sm:ml-[35%]">
         <div className={styles.triplesInputs}>
           <div className={styles.leftMonitor}>
             <div className={styles.monInput}>
-              <Input id="leftWidth" value={inputs.leftWidth} onChange={handleChange} />
+              <Input
+                id="leftWidth"
+                value={inputs.leftWidth}
+                onChange={handleChange}
+              />
             </div>
           </div>
           <div className={styles.centerMonitor}>
             <div className={styles.monInput}>
-              <Input id="centerWidth" value={inputs.centerWidth} onChange={handleChange} />
+              <Input
+                id="centerWidth"
+                value={inputs.centerWidth}
+                onChange={handleChange}
+              />
             </div>
           </div>
           <div className={styles.ypotinousa}>
             <div className={styles.monInput}>
-              <Input id="ypotinousa" value={inputs.ypotinousa} onChange={handleChange} />
+              <Input
+                id="ypotinousa"
+                value={inputs.ypotinousa}
+                onChange={handleChange}
+              />
             </div>
           </div>
         </div>

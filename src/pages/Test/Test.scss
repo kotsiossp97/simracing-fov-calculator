@@ -1,0 +1,28 @@
+.triangle {
+  width: 0;
+  height: 0;
+  // border-left: 0px solid transparent;
+  border-right: 500px solid transparent;
+  border-top: 250px solid #ccc;
+  position: relative;
+}
+
+.triangle input {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translate(-50%, -50%);
+  // width: 40px;
+  // height: 40px;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+
+.triangle input:nth-child(1) {
+  // left: calc(25% - 20px);
+}
+
+.triangle input:nth-child(2) {
+  // right: calc(25% - 20px);
+}

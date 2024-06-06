@@ -44,7 +44,7 @@ export const GAME_DATA = [
     calculation: "hfovrad",
     min: 10,
     max: 180,
-    decimals: 6,
+    decimals: 5,
     factor: 1,
   },
   {

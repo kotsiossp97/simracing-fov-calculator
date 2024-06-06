@@ -6,7 +6,7 @@ import React from "react";
 const Results: React.FC = () => {
   return (
     <ScrollArea className="h-full">
-      <div className="grid grid-cols-3 gap-10 mb-5">
+      <div className="grid md:grid-flow-col justify-items-center mb-5 max-md:gap-2">
         <GameCard
           game={{
             name: "Vertical FOV",
@@ -39,7 +39,7 @@ const Results: React.FC = () => {
           }}
         />
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-2 h-0">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 2xl:grid-cols-4 gap-2 ">
         {GAME_DATA.map((game, i) => (
           <GameCard key={i} game={game} />
         ))}

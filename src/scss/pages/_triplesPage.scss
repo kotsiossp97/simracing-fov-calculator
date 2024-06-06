@@ -26,13 +26,14 @@
   .pageCard {
     flex: 1;
     flex-basis: 24rem;
-    .resultCard{
+    .resultCard {
       width: 100%;
+      max-height: 15rem;
       aspect-ratio: 16/9;
       background-image: var(--bgImage);
       background-position: center;
       background-size: cover;
-      transition: all .5s ease-in;
+      transition: all 0.5s ease-in;
       position: relative;
       z-index: 0;
 
@@ -45,11 +46,11 @@
         width: 100%;
         height: 100%;
         @apply bg-background;
-        opacity: .6;
-        transition: all .3s ease-in;
+        opacity: 0.6;
+        transition: all 0.3s ease-in;
       }
       &:hover {
-        &::before{
+        &::before {
           opacity: 0.2;
         }
       }
@@ -57,10 +58,8 @@
   }
 
   .triplesInputs {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: relative;
+    min-height: 300px;
 
     .centerMonitor,
     .leftMonitor,

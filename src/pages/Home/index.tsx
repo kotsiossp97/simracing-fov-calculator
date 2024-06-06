@@ -30,7 +30,7 @@ const HomePage: React.FC = () => {
       setCalcState={dispatchCalculator}
     >
       <div className="h-full flex gap-5 flex-wrap">
-        <Card className="flex-1 basis-96">
+        <Card className="flex-1 basis-[500px]">
           <CardHeader>
             <CardTitle>Inputs</CardTitle>
             <CardDescription>Enter your inputs</CardDescription>
@@ -46,7 +46,7 @@ const HomePage: React.FC = () => {
           </CardContent>
         </Card>
 
-        <Card className="flex flex-col flex-1 basis-96">
+        <Card className="flex flex-col flex-1 basis-[500px]">
           <CardHeader>
             <CardTitle>Results</CardTitle>
             <CardDescription>
